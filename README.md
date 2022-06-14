@@ -2,5 +2,4 @@
 「Goならわかるシステムプログラミング」のコードを動かすためのリポジトリ。
 
 ## Go version
-go1.16.5 darwin/amd64
-
+go1.16.15 darwin/arm64
