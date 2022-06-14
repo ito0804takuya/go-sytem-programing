@@ -1,4 +1,4 @@
-package main 
+package main
 
 import "fmt"
 
@@ -16,13 +16,15 @@ type Greeter struct {
 	name string
 }
 
+// Greeter構造体のメソッド
 func (g Greeter) Talk() {
 	fmt.Printf("My name is %s\n", g.name)
 }
 
 func main() {
-	// greeter := 
+	// インターフェースを宣言するための変数
 	var talker Talker
+	// この時点で、GreeterはTalkerインターフェースを使うことを決める
 	talker = Greeter{name: "jiro"}
-  talker.Talk()
+	talker.Talk()
 }
